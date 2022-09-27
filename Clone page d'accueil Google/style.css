@@ -1,11 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
 header{  /* C'est ici que j'alligne mes éléments */
+    height: 80px;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
-    margin: 10px 20px;
+    justify-content:flex-end;
+    align-items: center;
 }
 header p{
-    margin-right: 10px; /* Marge exterieur de 10px de tous les liens */
+    margin-right: 15px; /* Marge exterieur de 10px de tous les liens */
     cursor: pointer;
+    height: 5px;
 }
 header p:hover{
     text-decoration: underline;
@@ -16,7 +29,7 @@ display: flex;
 .right svg{
     height: 30px;  /* hauteur 30px */
     width: 30px;  /* largeur 30px */
-    margin-top: 10px;
+    margin-top: 0px;
     margin-right: 10px;
     border-radius: 20px;
     cursor:pointer;
@@ -31,7 +44,7 @@ header svg:hover{
     color: #ffffffff;
     border-style: none;
     padding: 3px 0px;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-right: 10px;
     border-radius: 5px;
     height: 30px;
@@ -44,9 +57,12 @@ header svg:hover{
 
 .main{
     display: flex;
-    flex-direction: column; /* logo google et micro empilés */
+    flex-direction: column;
     align-items: center;
-    margin-top: 100px;  
+    justify-content: center;
+    flex: 1 0 auto;
+    gap: 30px;
+    margin-top: 200px;  
 }
 .main .form-group{
     display: flex;
@@ -93,18 +109,32 @@ header svg:hover{
 footer{
     width: 100%;
     background-color: #f2f2f2;
+    position:absolute;
 }
 .ligne{
     border-bottom: 1px solid #ddd;
-    height: 50px;
+    height: 35px;
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 5px;
 }
 p{ /* Renvoi au paragraphe France dans le footer*/
     color: grey;
-    padding-left: 0px;
+    padding-left: 20px;
 }
 .feuille{
-    width: 12px;
+    width: 10px;
+}
+a {
+    text-decoration: none;
+    color: grey;
+}
+a:hover{
+    text-decoration: underline;
+}
+.Aqui {
+    color: #1a73e8;
+}
+.test{
+    height: 301px;
 }
