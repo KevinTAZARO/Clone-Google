@@ -1,0 +1,110 @@
+header{  /* C'est ici que j'alligne mes éléments */
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 20px;
+}
+header p{
+    margin-right: 10px; /* Marge exterieur de 10px de tous les liens */
+    cursor: pointer;
+}
+header p:hover{
+    text-decoration: underline;
+}
+.right{
+display: flex;
+}
+.right svg{
+    height: 30px;  /* hauteur 30px */
+    width: 30px;  /* largeur 30px */
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    cursor:pointer;
+}
+header svg:hover{
+    background-color: #d1d1d1;
+}
+
+.connexion{
+    font-size: 17px;
+    background-color: #1a73e8;
+    color: #ffffffff;
+    border-style: none;
+    padding: 3px 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    height: 30px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.main{
+    display: flex;
+    flex-direction: column; /* logo google et micro empilés */
+    align-items: center;
+    margin-top: 100px;  
+}
+.main .form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+.main .form-group input{
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 50px;
+    border: 1px solid #d1d1d1;
+    outline: none;
+    width: 50%;
+}
+#mic{
+    float: right;
+    margin-top: -37px;
+    margin-right: -460px;
+    width: 25px;
+    position: relative;
+    cursor: pointer;
+}
+#loupe{
+    float: left;
+    margin-top: -23px;
+    margin-right: 460px;
+    width: 25px;
+    position: relative;
+    cursor: pointer;
+    opacity: 0.3;
+}
+.main .buttons{
+    margin-top: 40px;
+}
+.main .buttons button{
+    padding: 10px 20px;
+    background-color: #faf9f9;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.ligne{
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+p{ /* Renvoi au paragraphe France dans le footer*/
+    color: grey;
+    padding-left: 0px;
+}
+.feuille{
+    width: 12px;
+}
